@@ -8,7 +8,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,34 @@
   "bugs": {
     "url": "https://github.com/nullenboom/scenario-eth-gas-reporter/issues"
   },
-  "homepage": "https://github.com/nullenboom/scenario-eth-gas-reporter#readme"
+  "homepage": "https://github.com/nullenboom/scenario-eth-gas-reporter#readme",
+  "dependencies": {
+    "ethers": "^4.0.28",
+    "fs-readdir-recursive": "^1.1.0",
+    "lodash": "^4.17.14",
+    "markdown-table": "^1.1.3",
+    "mocha": "^5.2.0",
+    "req-cwd": "^2.0.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
+    "scenario-eth-gas-table": "^1.0.1",
+    "sha1": "^1.1.1",
+    "solidity-parser-antlr": "0.4.7",
+    "sync-request": "^6.0.0"
+  },
+   "devDependencies": {
+    "@nomiclabs/buidler": "^1.0.0-beta.9",
+    "@nomiclabs/buidler-truffle5": "^1.0.0-beta.9",
+    "@nomiclabs/buidler-web3": "^1.0.0-beta.9",
+    "fp-ts": "^1.19.0",
+    "ganache-cli": "6.4.3",
+    "geth-dev-assistant": "^0.0.3",
+    "husky": "^2.7.0",
+    "prettier": "1.17.1",
+    "pretty-quick": "^1.11.0",
+    "randomstring": "^1.1.5",
+    "truffle": "5.0.12",
+    "web3": "^1.2.0",
+    "yarn": "^1.16.0"
+  }
 }
