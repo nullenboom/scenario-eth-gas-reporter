@@ -1,0 +1,31 @@
+{
+  "name": "scenario-eth-gas-reporter",
+  "version": "0.0.1",
+  "description": "Mocha reporter which show gas used by different implement variants for a scenario (based on eth-gas-reporter)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nullenboom/scenario-eth-gas-reporter.git"
+  },
+  "keywords": [
+    "Ethereum",
+    "solidity",
+    "truffle",
+    "gascost",
+    "transaction",
+    "cost"
+  ],
+  "author": "Niklas Ullenboom <github.com/nullenboom>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nullenboom/scenario-eth-gas-reporter/issues"
+  },
+  "homepage": "https://github.com/nullenboom/scenario-eth-gas-reporter#readme"
+}
