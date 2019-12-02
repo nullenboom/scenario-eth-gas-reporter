@@ -1,35 +1,33 @@
 {
-  "name": "eth-gas-reporter",
-  "version": "0.2.12",
-  "description": "Mocha reporter which shows gas used per unit test.",
+  "name": "scenario-eth-gas-reporter",
+  "version": "0.0.1",
+  "description": "Mocha reporter which show gas used by different implement variants for a scenario (based on eth-gas-reporter)",
   "main": "index.js",
-  "scripts": {
-    "geth": "./scripts/geth.sh",
-    "test": "./mock/scripts/test.sh",
-    "ci": "./scripts/ci.sh"
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cgewecke/eth-gas-reporter.git"
+    "url": "git+https://github.com/nullenboom/scenario-eth-gas-reporter.git"
   },
   "keywords": [
     "Ethereum",
     "solidity",
-    "unit-testing",
     "truffle",
-    "gas."
+    "gascost",
+    "transaction",
+    "cost"
   ],
-  "author": "cgewecke <github.com/cgewecke>",
+  "author": "Niklas Ullenboom <github.com/nullenboom>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cgewecke/eth-gas-reporter/issues"
+    "url": "https://github.com/nullenboom/scenario-eth-gas-reporter/issues"
   },
-  "homepage": "https://github.com/cgewecke/eth-gas-reporter#readme",
+  "homepage": "https://github.com/nullenboom/scenario-eth-gas-reporter#readme",
   "dependencies": {
     "ethers": "^4.0.28",
     "fs-readdir-recursive": "^1.1.0",

@@ -7,7 +7,7 @@ module.exports = {
     }
   },
   mocha: {
-    reporter: "eth-gas-reporter",
+    reporter: "scenario-eth-gas-reporter",
     reporterOptions: {
       excludeContracts: ["Migrations"]
     }

@@ -9,13 +9,13 @@ install_reporter() {
   npm install
 
   # Copy over eth-gas-reporter
-  if [ ! -e node_modules/eth-gas-reporter ]; then
-    mkdir node_modules/eth-gas-reporter
+  if [ ! -e node_modules/scenario-eth-gas-reporter ]; then
+    mkdir node_modules/scenario-eth-gas-reporter
   fi
 
-  cp -r ./../lib node_modules/eth-gas-reporter
-  cp ./../index.js node_modules/eth-gas-reporter/index.js
-  cp ./../package.json node_modules/eth-gas-reporter/package.json
+  cp -r ./../lib node_modules/scenario-eth-gas-reporter
+  cp ./../index.js node_modules/scenario-eth-gas-reporter/index.js
+  cp ./../package.json node_modules/scenario-eth-gas-reporter/package.json
 
 }
 
