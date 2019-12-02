@@ -60,5 +60,12 @@ typings/
 # next.js build output
 .next
 
-#mock
-mock/
+# Mock debris
+mock/cache/
+mock/artifacts/
+mock/yarn.lock
+mock/cc.md
+mock/node_modules
+mock/package-lock.json
+mock/build
+mock/scenario-gas-reports
