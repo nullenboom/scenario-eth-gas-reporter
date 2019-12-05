@@ -1,5 +1,8 @@
 ## Advanced Topics
 
+
+
+
 ### Configuration for non-buidler, non-truffle projects
 
 The reporter's only strict requirements are:
