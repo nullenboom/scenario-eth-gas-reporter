@@ -12,11 +12,10 @@ const ScenarioWatcher = require("./lib/scenarioWatcher");
 const ScenarioDataExporter = require("./lib/scenarioDataExporter");
 /**
  * Based on the Mocha 'Spec' reporter. Watches an Ethereum test suite run
- * and collects data about method & deployments gas usage. Mocha executes the hooks
+ * and collects data about method & deployments gas usage and try to map them to a scenario and implementvariant
+ . Mocha executes the hooks
  * in this reporter synchronously so any client calls here should be executed
  * via low-level RPC interface using sync-request. (see /lib/syncRequest)
- * An exception is made for fetching gas & currency price data from coinmarketcap and
- * ethgasstation (we hope that single call will complete by the time the tests finish running)
  *
  * @param {Object} runner  mocha's runner
  * @param {Object} options reporter.options (see README example usage)
@@ -37,9 +36,6 @@ function Gas(runner, options) {
   const watch = new ScenarioWatcher(config);
 
   const scenarioDataExporter = new ScenarioDataExporter(config);
-
-  // These call the cloud, start running them.
-  utils.setGasAndPriceRates(config);
 
   // ------------------------------------  Runners -------------------------------------------------
 
@@ -67,7 +63,7 @@ function Gas(runner, options) {
   runner.on("test", test => {
     watch.beforeStartBlock = sync.blockNumber();
     watch.data.resetAddressCache();
-    watch.data.initializeImplementNew(test.title, test.parent.title);
+    watch.data.initializeImplementVariant(test.title, test.parent.title);
   });
 
   runner.on("hook end", hook => {
