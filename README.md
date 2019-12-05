@@ -14,7 +14,7 @@ Detailed information of gas usage per test case. One test case represent a imple
 
 
 ### Example output
-![Example Output](https://github.com/nullenboom/scenario-eth-gas-reporter/blob/master/docs/exampleoutput.png)
+![Example Output](https://github.com/nullenboom/scenario-eth-gas-reporter/blob/master/img/exampleoutput.JPG)
 
 ### Installation and Config
 
