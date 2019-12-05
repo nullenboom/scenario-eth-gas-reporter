@@ -32,6 +32,16 @@ test_truffle_parity_small() {
 
 }
 
+test_truffle_parity_medium() {
+  echo "-----------------------------------------------------------"
+  echo "> Visual inspection integration test (Truffle - no options)"
+  echo "> YOU MUST LOOK AT THIS TEST TO DETECT FAILURE"
+  echo "-----------------------------------------------------------"
+  truffle migrate
+  truffle test ./test/ParityScenarioMedium.js
+
+}
+
 # With options
 test_truffle_v5_with_options() {
   echo "--------------------------------------------------------------------"
