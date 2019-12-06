@@ -123,7 +123,7 @@ function Gas(runner, options) {
   });
 
   runner.on("end", () => {
-    let jsonAndFileName = scenarioDataExporter.export(watch.data);
+    let jsonAndFileName = scenarioDataExporter.getJsonFromData(watch.data);
     //schreiben in directory
     scenarioDataExporter.writeJsonIntoReportDirWithFilename(
       jsonAndFileName.json,
