@@ -37,12 +37,12 @@
     "req-cwd": "^2.0.0",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.5",
-    "scenario-eth-gas-table": "^1.0.1",
+    "scenario-eth-gas-table": "^1.0.3",
     "sha1": "^1.1.1",
     "solidity-parser-antlr": "0.4.7",
     "sync-request": "^6.0.0"
   },
-   "devDependencies": {
+  "devDependencies": {
     "@nomiclabs/buidler": "^1.0.0-beta.9",
     "@nomiclabs/buidler-truffle5": "^1.0.0-beta.9",
     "@nomiclabs/buidler-web3": "^1.0.0-beta.9",
